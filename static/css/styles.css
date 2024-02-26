@@ -1,0 +1,36 @@
+.container {  display: grid;
+  grid-template-columns: 1.5fr 0.5fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Satelite Weather"
+    "YT-Stream YT-Stream";
+}
+
+.Satelite { grid-area: Satelite; }
+
+.Weather {  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Clima";
+  grid-area: Weather;
+}
+
+.Clima { grid-area: Clima; }
+
+.YT-Stream { grid-area: YT-Stream; }
+
+
+html, body , .container {
+  height: 100%;
+  margin: 0;
+}
+
+/* For presentation only, no need to copy the code below */
+
+
+

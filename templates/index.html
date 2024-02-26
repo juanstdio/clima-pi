@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+  <body>
+  
+    <style>
+      body {
+        background: rgb(144, 34, 195);
+        background: linear-gradient(
+            169deg,
+            rgba(2, 0, 36, 1) 0%,
+            rgba(9, 121, 103, 1) 38%,
+            rgba(0, 255, 68, 1) 100%
+          )
+          fixed;
+        color: #fff;
+      }
+      strong {
+        color: #650a5d;
+      }
+	  #frame { zoom: 0.60; -moz-transform: scale(0.75); -moz-transform-origin: 0 0; }
+
+    </style>
+    <div class="container">
+      <div class="Satelite">
+        <iframe
+          type="text/html"
+		  id="frame"
+          width="60%"
+          height="110%"
+		  scrolling="false"
+		  src="http://192.168.0.8:5000/web2"
+        ></iframe>
+      </div>
+      <div class="Weather">
+        <iframe
+          src="https://www.meteoblue.com/es/tiempo/widget/daily/buenos-aires_argentina_3435910?geoloc=fixed&days=6&tempunit=CELSIUS&windunit=KILOMETER_PER_HOUR&precipunit=MILLIMETER&coloured=coloured&pictoicon=0&pictoicon=1&maxtemperature=0&maxtemperature=1&mintemperature=0&mintemperature=1&windspeed=0&windspeed=1&windgust=0&windgust=1&winddirection=0&winddirection=1&uv=0&uv=1&humidity=0&humidity=1&precipitation=0&precipitation=1&precipitationprobability=0&precipitationprobability=1&spot=0&spot=1&pressure=0&pressure=1&layout=dark"
+          frameborder="0"
+          scrolling="NO"
+          allowtransparency="true"
+          sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox"
+		  style="position:relative; top: 10px; right: 350px;"
+		  width="140%"
+          height="140%"
+        ></iframe>
+		<iframe
+          type="text/html"
+          src="https://www.youtube.com/embed/avly0uwZzOE?autoplay=1&showinfo=0&vq=small&controls=0&mute=1&rel=0"
+          width="854"
+          height="480"
+          frameborder="0"
+		  style="position:absolute; top: 625px; right: 100px;"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        ></iframe>
+      </div>
+      <div class="YT-Stream">
+        <iframe
+          type="text/html"
+          src="https://www.youtube.com/embed/Hy4UCfsE6Yk?autoplay=1&showinfo=0&controls=0&mute=1&rel=0"
+          width="854"
+          height="480"
+          frameborder="0"
+ 		  style="position:relative; top: 0px; right: 0px;"
+
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        ></iframe>
+      </div>
+    </div>
+  </body>
+</html>
