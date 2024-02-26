@@ -9,6 +9,11 @@ Easy Deployment  The project includes clear documentation and setup instructions
 ### REQUIRED:
 - Stable Internet connection
 - Python 3.11
+- install required packages
+```
+- Beautiful Soup  ; flask
+```
+# pip install bs4 requests flask
 
 # How to Use
 Clone the repository to your local machine.
