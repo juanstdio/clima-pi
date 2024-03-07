@@ -6,8 +6,10 @@ This GitHub project provides a Flask web server that serves as a comprehensive d
 - Optimized for 1366x768 HD Monitors
 - Web server only consumes 30 MB of RAM!
 
+# How it looks?
+![](https://github.com/juanstdio/clima-pi/blob/main/templates/clima-pi.gif)
 
-### REQUIRED:
+# REQUIRED:
 - Stable Internet connection
 - Python 3.11
 - install required packages: Beautiful Soup  & flask
